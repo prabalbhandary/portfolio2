@@ -25,7 +25,7 @@ const projectsData = [
   { id: 9, title: 'Prabal Music', description: 'https://prabalbhandary.netlify.app/', image: { src: pro9, alt: 'Prabal Music' } },
   { id: 10, title: 'Prabal Shop', description: 'https://prabalshop.netlify.app/', image: { src: pro10, alt: 'Prabal Shop' } },
   { id: 11, title: 'Prabal Quiz App', description: 'https://prabalquizapp.netlify.app/', image: { src: pro11, alt: 'Prabal Quiz App' } },
-  { id: 12, title: 'Prabal Quiz App', description: 'https://prabal-my-portfolio.netlify.app/', image: { src: pro12, alt: 'Prabal Portfolio' } },
+  { id: 12, title: 'Prabal Portfolio 2', description: 'https://prabal-my-portfolio.netlify.app/', image: { src: pro12, alt: 'Prabal Portfolio' } },
 ];
 
 const Projects = () => {
