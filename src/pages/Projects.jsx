@@ -10,6 +10,8 @@ import pro8 from '../assets/pro8.png';
 import pro9 from '../assets/pro9.png';
 import pro10 from '../assets/pro10.png';
 import pro11 from '../assets/pro11.png';
+import pro12 from '../assets/pro12.png';
+import { Link } from 'react-router-dom';
 
 const projectsData = [
   { id: 1, title: 'Kantipur Ride', description: 'https://kantipur-ride-iota.vercel.app/', image: { src: pro, alt: 'Kantipur Ride' } },
@@ -23,6 +25,7 @@ const projectsData = [
   { id: 9, title: 'Prabal Music', description: 'https://prabalbhandary.netlify.app/', image: { src: pro9, alt: 'Prabal Music' } },
   { id: 10, title: 'Prabal Shop', description: 'https://prabalshop.netlify.app/', image: { src: pro10, alt: 'Prabal Shop' } },
   { id: 11, title: 'Prabal Quiz App', description: 'https://prabalquizapp.netlify.app/', image: { src: pro11, alt: 'Prabal Quiz App' } },
+  { id: 12, title: 'Prabal Quiz App', description: 'https://prabal-my-portfolio.netlify.app/', image: { src: pro12, alt: 'Prabal Portfolio' } },
 ];
 
 const Projects = () => {
@@ -40,14 +43,14 @@ const Projects = () => {
           />
           <div className="p-4">
             <h3 className="text-xl font-bold text-gray-800 mt-2">{project.title}</h3>
-            <a
-              href={project.description}
+            <Link
+              to={project.description}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline mt-1 block"
             >
               View Project
-            </a>
+            </Link>
           </div>
         </div>
       ))}
